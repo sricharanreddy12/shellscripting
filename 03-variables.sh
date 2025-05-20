@@ -3,8 +3,8 @@
 person1= Modi
 person2= shah
 
-echo "$person1:: Hey $person2, hope you doing good"
-echo "$person2: Hlo bhai, doing good. how are you doing"
-echo "$person1:: I too good man. what are the meetings your having for today"
-echo "$person2: I have to visit the ahmedabad meeting  for today"
-echo "$person1: Thats sounds good $person2"
+echo "$PERSON1:: Hey $PERSON2, hope you doing good"
+echo "$PERSON2: Hlo bhai, doing good. how are you doing"
+echo "$PERSON1:: I too good man. what are the meetings your having for today"
+echo "$PERSON2: I have to visit the ahmedabad meeting  for today"
+echo "$PERSON1: Thats sounds good $PERSON2"
