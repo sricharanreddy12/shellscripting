@@ -1,6 +1,6 @@
 #! /bin/bash
 
-person1= modi
+person1= Modi
 person2= shah
 
 echo "$person1:: Hey $person2, hope you doing good"
