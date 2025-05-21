@@ -7,5 +7,5 @@ Timestamp=$(date)
 
 echo "script executed time: $Timestamp"
 
-SUM=$(($number1+$number2))
+SUM=$(($Number1+$Number2))
 echo "SUM of two numbers is : $SUM"
