@@ -5,7 +5,7 @@ number2=200
 
 Timestamp=$(date)
 
-echo " script executed time is :$date "
+echo "script executed time: $Timestamp"
 
-sum=$(($number1+$number2))
-echo "sum of two numbers is :$sum "
+SUM=$(($number1+$number2))
+echo "SUM of two numbers is : $SUM"
