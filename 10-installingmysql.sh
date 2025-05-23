@@ -4,7 +4,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-   echo "Error:: please run with root access"
+   echo "Error:: please run dcipt with root access"
    exit 1
 else
    echo "already running with root user"
