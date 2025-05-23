@@ -1,5 +1,6 @@
 #!/bin/bash
 
+Number=$1
 # -lt --> lessthan
 # -gt --> greater than
 # -eq --> equals to
