@@ -5,7 +5,7 @@
 # -eq --> equals to
 # -ne --> not equals to
 
-if ( $Number -lt 10 )
+if [ $Number -lt 10 ] 
 then
    echo "Given number is $number is lessthan 10 "
 
