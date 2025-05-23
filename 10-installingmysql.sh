@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERID=$(id-u)
+USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
@@ -10,7 +10,7 @@ else
    echo "already running with root user"
 fi
 
-dnf list mysql installed
+dnf list installed mysql
 
 if [ $? -ne 0 ]
 then 
