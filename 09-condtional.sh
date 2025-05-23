@@ -7,10 +7,10 @@
 
 if [ $Number -lt 10 ] 
 then
-   echo "Given number is $number is lessthan 10 "
+   echo "Given number is $Number is lessthan 10 "
 
 else 
-   echo " Given number is $number is not lessthan 10 "
+   echo " Given number is $Number is not lessthan 10 "
 fi
 
  
