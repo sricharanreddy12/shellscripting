@@ -39,17 +39,19 @@ else
    exit 1
 fi
 }
-For i in $@
+
+#for package in ${package[@]}
+For package in $@
 do
- dnf list installed $PACKAGES &>>$LOGS_FILE
+ dnf list installed $package &>>$LOGS_FILE
 
   if [ $? -ne 0 ]
    then
-   echo "Installing the $PACKAGES is going on"| tee -a $LOGS_FILE
-      dnf install $PACKAGES -y &>>$LOGS_FILE
-      VALIDATE $? "$PACKAGES"
+   echo "Installing the $package is going on"| tee -a $LOGS_FILE
+      dnf install $package -y &>>$LOGS_FILE
+      VALIDATE $? "$package"
   else
-   echo -e "$Y $PACKAGES is already installed $N" | tee -a $LOGS_FILE
+   echo -e "$Y $package is already installed $N" | tee -a $LOGS_FILE
  fi 
 done
 
