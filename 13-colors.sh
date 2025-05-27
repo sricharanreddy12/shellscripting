@@ -1,5 +1,7 @@
 #!/bin/bash
 
+Userid=$(id -u)
+
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
@@ -8,9 +10,6 @@ M="\e[35m"
 C="\e[36m"
 W="\e[37m"
 N="\e[0m"
-
-
-Userid=$(id -u)
 
 if [ $Userid -ne 0 ]
 then
