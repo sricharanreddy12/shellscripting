@@ -11,6 +11,8 @@ C="\e[36m"
 W="\e[37m"
 N="\e[0m"
 
+
+
 if [ $Userid -ne 0 ]
 then
     echo "$R error::please run withroot user$N"
@@ -48,7 +50,7 @@ then
    dnf install python3 -y
    VALIDATE $? "python3"
 else
-   echo -e "$Y python installed already"
+   echo -e "$Y python installed already $N"
 fi
 
 dnf list installed nginx
@@ -59,7 +61,7 @@ then
    dnf install nginx -y
    VALIDATE $? "nginx"
 else
-   echo -e "$Y nginx is installed already"
+   echo -e "$Y nginx is installed already $N"
 fi
 
 
