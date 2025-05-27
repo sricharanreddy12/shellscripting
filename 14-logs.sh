@@ -10,12 +10,11 @@ M="\e[35m"
 C="\e[36m"
 W="\e[37m"
 N="\e[0m"
-
 LOGS_FOLDER="/var/logs/shellscript-logs"
 SCRIPT_NAME=$(echo $0 | cut -d "." F1)
 LOGS_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
-Mkdir -p $LOGS_FOLDER
+mkdir -p $LOGS_FOLDER
 
 echo "script started executed at : $(date)" | tee -a $LOGS_FILE
 
@@ -23,7 +22,8 @@ echo "script started executed at : $(date)" | tee -a $LOGS_FILE
 
 if [ $Userid -ne 0 ]
 then
-    echo "$R error::please run withroot user$N"
+    echo "$R error::please run withroot user$N" | tee -a $LOGS_FILE
+
     exit 1
 else
 echo "you are running with root user" | tee -a $LOGS_FILE
