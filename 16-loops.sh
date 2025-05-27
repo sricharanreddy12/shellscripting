@@ -41,7 +41,7 @@ fi
 }
 
 #for package in ${package[@]}
-For package in $@
+for package in $@
 do
  dnf list installed $package &>>$LOGS_FILE
 
