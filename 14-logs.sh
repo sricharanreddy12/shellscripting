@@ -11,7 +11,7 @@ C="\e[36m"
 W="\e[37m"
 N="\e[0m"
 LOGS_FOLDER="/var/logs/shellscript-logs"
-SCRIPT_NAME=$(echo $0 | cut -d "." F1)
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGS_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER
